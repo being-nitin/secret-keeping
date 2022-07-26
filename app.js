@@ -251,7 +251,6 @@ app.get("/login",function(req,res){
 app.get("/register",function(req,res){
     res.render("register");
 })
-app.get("/secrets")
 
 let port = process.env.PORT;
 if(port==null || port==""){
