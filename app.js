@@ -32,7 +32,7 @@ app.use(passport.session());
 
 
 
-mongoose.connect("mongodb+srv://admin-nitin:NIti1223@cluster0.mktajco.mongodb.net/userDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://"+process.env.Admin_cred+"@cluster0.mktajco.mongodb.net/userDB", {useNewUrlParser: true});
 
 const userSchema = new mongoose.Schema({
     email: String,
